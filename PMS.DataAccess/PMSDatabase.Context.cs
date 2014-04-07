@@ -9,12 +9,13 @@
 
 namespace PMS.DataAccess
 {
+    using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PmsEntities : DbContext
+    public partial class pmsEntities : DbContext
     {
-        public PmsEntities()
+        public pmsEntities()
             : base("name=pmsEntities")
         {
         }

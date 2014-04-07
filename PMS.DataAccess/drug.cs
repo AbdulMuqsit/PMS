@@ -9,6 +9,9 @@
 
 namespace PMS.DataAccess
 {
+    using System;
+    using System.Collections.Generic;
+    
     public partial class drug
     {
         public string brandname { get; set; }

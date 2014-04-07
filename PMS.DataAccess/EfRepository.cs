@@ -11,13 +11,13 @@ namespace PMS.DataAccess
 {
     public class EfRepository<T> where T:class 
     {
-        protected PmsEntities Entities { get; set; }
+        protected pmsEntities Entities { get; set; }
 
         protected DbSet<T> DbSet { get { return Entities.Set<T>(); } }
 
         public EfRepository()
         {
-            Entities= new PmsEntities();
+            Entities= new pmsEntities();
             
         }
         public IList<T> GetAll()
@@ -29,18 +29,12 @@ namespace PMS.DataAccess
 
         public IList<T> GetAll(Expression<Func<T, bool>> predicate)
         {
-
             return DbSet.Where(predicate).ToList();
         }
 
         public virtual T GetById(int id)
         {
             return DbSet.Find(id);
-        }
-
-        public virtual async Task<T> GetByIdAsync(int id)
-        {
-            return await DbSet.FindAsync(id);
         }
 
         public virtual void Add(T entity)

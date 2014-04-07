@@ -9,6 +9,9 @@
 
 namespace PMS.DataAccess
 {
+    using System;
+    using System.Collections.Generic;
+    
     public partial class login
     {
         public string UserName { get; set; }

@@ -9,6 +9,9 @@
 
 namespace PMS.DataAccess
 {
+    using System;
+    using System.Collections.Generic;
+    
     public partial class doctor
     {
         public int id { get; set; }
