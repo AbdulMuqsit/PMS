@@ -63,6 +63,7 @@
     <Compile Include="drug.cs">
       <DependentUpon>PMSDatabase.tt</DependentUpon>
     </Compile>
+    <Compile Include="EfRepository.cs" />
     <Compile Include="login.cs">
       <DependentUpon>PMSDatabase.tt</DependentUpon>
     </Compile>
@@ -84,6 +85,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PMSDatabase.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PMSRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

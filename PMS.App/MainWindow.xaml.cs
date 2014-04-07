@@ -12,10 +12,9 @@ namespace PMS.App
         public MainWindow()
         {
             InitializeComponent();
-            DoctorRepository repository = new DoctorRepository();
+            PMSRepository repository = new PMSRepository();
 
-
-           lstBox.ItemsSource = repository.GetAll().ToList().Select(e=>e.name);
+            lstBox.ItemsSource = repository.Doctors.GetAll().ToList().Select(e=>e.name);
         }
     }
 }

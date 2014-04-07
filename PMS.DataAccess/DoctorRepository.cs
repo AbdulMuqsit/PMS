@@ -1,15 +1,18 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
 
 namespace PMS.DataAccess
 {
-    public class DoctorRepository
+    public class DoctorRepository :EfRepository<doctor>
     {
-        PmsEntities entities = new PmsEntities();
+       
 
-        public IQueryable<doctor> GetAll()
-        {
-            return entities.doctors.AsQueryable();
-        }
+        
+
+        
     }
 }
