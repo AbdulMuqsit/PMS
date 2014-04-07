@@ -20,14 +20,13 @@ namespace PMS.DataAccess
             Entities= new PmsEntities();
             
         }
-        public IList<T> GetAll()
+        public virtual IList<T> GetAll()
         {
-
             return DbSet.ToList();
 
         }
 
-        public IList<T> GetAll(Expression<Func<T, bool>> predicate)
+        public virtual IList<T> GetAll(Expression<Func<T, bool>> predicate)
         {
 
             return DbSet.Where(predicate).ToList();

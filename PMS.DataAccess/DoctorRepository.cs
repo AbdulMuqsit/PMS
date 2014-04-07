@@ -9,9 +9,8 @@ namespace PMS.DataAccess
 {
     public class DoctorRepository :EfRepository<doctor>
     {
-       
 
-        
+
 
         
     }
