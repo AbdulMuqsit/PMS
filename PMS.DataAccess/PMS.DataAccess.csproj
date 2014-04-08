@@ -59,11 +59,9 @@
     <Compile Include="doctor.cs">
       <DependentUpon>PMSDatabase.tt</DependentUpon>
     </Compile>
-    <Compile Include="DoctorRepository.cs" />
     <Compile Include="drug.cs">
       <DependentUpon>PMSDatabase.tt</DependentUpon>
     </Compile>
-    <Compile Include="EfRepository.cs" />
     <Compile Include="login.cs">
       <DependentUpon>PMSDatabase.tt</DependentUpon>
     </Compile>
@@ -85,8 +83,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PMSDatabase.edmx</DependentUpon>
     </Compile>
-    <Compile Include="PMSRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DoctorRepository.cs" />
+    <Compile Include="Repositories\DrugRepository.cs" />
+    <Compile Include="Repositories\EfRepository.cs" />
+    <Compile Include="Repositories\LoginRepository.cs" />
+    <Compile Include="Repositories\PatientRepository.cs" />
+    <Compile Include="Repositories\PMSRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

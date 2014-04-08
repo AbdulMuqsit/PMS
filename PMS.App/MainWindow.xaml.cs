@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using System.Windows;
 using PMS.DataAccess;
+using PMS.DataAccess.Repositories;
 
 namespace PMS.App
 {
