@@ -15,7 +15,7 @@ namespace PMS.App
             InitializeComponent();
             PMSRepository repository = new PMSRepository();
 
-            lstBox.ItemsSource = repository.Doctors.GetAll().ToList().Select(e=>e.name);
+            //lstBox.ItemsSource = repository.Doctors.GetAll().ToList().Select(e=>e.name);
         }
     }
 }
