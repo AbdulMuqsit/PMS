@@ -33,5 +33,25 @@
             <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
             <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
         </Style>
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="MinHeight" Value="30"></Setter>
+            <Setter Property="MinWidth" Value="270"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+        </Style>
+        <Style x:Key="LblDoctorViewStyle" BasedOn="{StaticResource LabelStyle}" TargetType="Label">
+            <Setter Property="MaxWidth" Value="50"></Setter>
+            <Setter Property="FontSize" Value="15"></Setter>
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="MinHeight" Value="30"></Setter>
+            <Setter Property="MinWidth" Value="270"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+        </Style>
+
     </Application.Resources>
 </Application>
